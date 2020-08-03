@@ -180,7 +180,7 @@ p {
 
 @media screen and (max-width: 1557px) {
   .app {
-    grid-template: 1fr / minmax(463px, 1fr);
+    grid-template: 1fr / minmax(300px, 1fr);
     grid-template-areas: "header"
       "content"
       "menu";
@@ -197,6 +197,7 @@ p {
     overflow: auto;
     max-width: auto;
     width: 90vw;
+    margin: 0 auto;
   }
 
   .search-input {
