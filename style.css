@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  font-family: 'Recursive', sans-serif;
+}
+
+.app {
+  display: grid;
+  grid-template: 75px 1fr / 100px minmax(1000px, 1fr);
+  grid-template-areas: "header header"
+    "menu content";
+}
+
+.logo {
+  width: 50px;
+  margin-left: 25%;
+}
+
+.imgEmail {
+  width: 45px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.menu-2 {
+  margin-right: 16px;
+}
+
+.menu-2 p {
+  font-size: 1em;
+  padding: 5px;
+}
+
+header {
+  box-shadow: 0px 0px 10px #00000066;
+}
+
+.search {
+  display: flex;
+  grid-area: header;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+h3 {
+  margin-left: 45px;
+}
+
+.search div {
+  display: flex;
+  align-items: center;
+}
+
+.search img {
+  object-fit: contain;
+  object-position: center;
+}
+
+.search-input {
+  width: 50%;
+  padding: 12px;
+  border-radius: 5px;
+  border: .5px solid rgb(179, 179, 179);
+}
+
+.menu {
+  display: flex;
+  align-items: baseline;
+  grid-area: menu;
+  background-color: #FE6061;
+  color: white;
+  text-align: center;
+}
+
+.menu div i {
+  font-size: 35px;
+}
+
+.menu div {
+  margin: 15px;
+}
+
+section {
+  margin: 0 auto;
+}
+
+.config {
+  position: absolute;
+  left: 0.5%;
+  align-self: flex-end;
+  justify-self: center;
+  padding: 5px;
+}
+
+.content {
+  display: grid;
+  grid-area: content;
+  grid-template: 200px 200px 381px / 1fr;
+  grid-template-areas: "one"
+    "two"
+    "three";
+  gap: 189px;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  width: 450px;
+}
+
+.carrousel {
+  margin: 10px;
+  max-width: 1400px;
+  width: 100vw;
+  height: 300px;
+  overflow: auto;
+  overflow-y: hidden;
+  display: flex;
+}
+
+.item {
+  max-width: 1400px;
+  max-height: 4px;
+}
+
+.item-card {
+  background-image: url('https://i1.wp.com/cocalecas.net/wp-content/uploads/2016/07/The-Secret-Life-of-Pets-trailer.jpg?fit=810%2C438&ssl=1');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  display: flex;
+  margin: 0;
+  margin-left: 80px;
+  width: 390px;
+  height: 235px;
+}
+
+p {
+  font-size: 12px;
+}
+
+.item-card-text {
+  display: block;
+  align-self: flex-end;
+  justify-self: start;
+  background-color: #fd5050be;
+  padding: 10px;
+  color: white;
+  font-size: 1em;
+  scroll-padding: 20px;
+  width: 500px;
+  transition: linear;
+}
+
+.item-card img {
+  width: 500px;
+  margin: 10px;
+}
+
+.title {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 30px;
+  -webkit-text-stroke: 1px #FE6061;
+}
+
+.item-card:hover .item-card-text {
+  cursor: pointer;
+  transition-duration: .2s;
+  height: 100%;
+}
+
+@media screen and (max-width: 1557px) {
+  .app {
+    grid-template: 1fr / minmax(463px, 1fr);
+    grid-template-areas: "header"
+      "content"
+      "menu";
+      margin: 0;
+  }
+
+  .menu-items {
+    display: flex;
+    margin: 0 auto 0 0;
+  }
+
+  .carrousel {
+    height: 235px;
+    overflow: auto;
+    max-width: auto;
+    width: 90vw;
+  }
+
+  .search-input {
+    display: none;
+  }
+
+  .config {
+    position: relative;
+  }
+}
