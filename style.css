@@ -151,12 +151,12 @@ p {
   display: block;
   align-self: flex-end;
   justify-self: start;
-  background-color: #fd5050be;
+  background-color: #fd505087;
   padding: 10px;
-  color: white;
+  color: #fff;
   font-size: 1em;
   scroll-padding: 20px;
-  width: 500px;
+  width: 50vw;
   transition: linear;
 }
 
