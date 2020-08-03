@@ -197,7 +197,6 @@ p {
     overflow: auto;
     max-width: auto;
     width: 90vw;
-    margin: 0 auto;
   }
 
   .search-input {
